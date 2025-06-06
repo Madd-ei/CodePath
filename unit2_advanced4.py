@@ -25,12 +25,12 @@ def is_balanced(code):
         return False
 
     for value in my_dict.values():
-        if value > min_num and above == False:
+        if value > min_num and above is False:
             above = True
-        elif value > min_num and above == True:
+        elif value > min_num and above is True:
             return False
 
-    if above == True:
+    if above is True:
         return True
     else:
         return False
